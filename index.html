@@ -3,21 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter-Strike Türkiye Topluluğu</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CS2 Türkiye Topluluğu</title>
+    <style>
+        /* TASARIM (CSS) BURADA BAŞLIYOR */
+        body {
+            background-color: #0d1117; /* Koyu arka plan */
+            color: #ffffff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Logo Ayarları */
+        .logo {
+            width: 250px; /* Logonun boyutu */
+            height: auto;
+            border-radius: 50%; /* Yuvarlak görünüm */
+            box-shadow: 0 0 30px rgba(188, 31, 36, 0.4); /* Kırmızı parlama efekti */
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05); /* Fareyle üzerine gelince hafif büyüme */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #8b949e;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        /* Butonlar */
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px 30px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #bc1f24; /* Logodaki kırmızı tonu */
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #e62229;
+            box-shadow: 0 0 15px rgba(230, 34, 41, 0.5);
+        }
+
+        .btn-secondary {
+            border: 2px solid #ffffff;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            color: #0d1117;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="CS Türkiye Logo" class="main-logo">
-        <h1>Counter-Strike Türkiye Topluluğu</h1>
-        <p>Türkiye'nin en aktif CS2 ve topluluk sunucusu platformu.</p>
-    </header>
 
-    <main>
-        <section class="buttons">
-            <a href="#" class="btn">Discord'a Katıl</a>
-            <a href="#" class="btn secondary">Sunucularımız</a>
-        </section>
-    </main>
+    <div class="container">
+        <img src="CS2 TÜRKİYE TOPLULUĞU.jpg" alt="CS2 Türkiye Logosu" class="logo">
+
+        <h1>CS2 TÜRKİYE TOPLULUĞU</h1>
+        <p>Türkiye'nin en seçkin Counter-Strike 2 oyuncularını bir araya getiren topluluk platformu. Çok yakında burada!</p>
+
+        <div class="btn-group">
+            <a href="https://discord.gg/linkin" class="btn btn-primary">Discord'a Katıl</a>
+            <a href="#sunucular" class="btn btn-secondary">Sunucu Listesi</a>
+        </div>
+    </div>
+
 </body>
 </html>
